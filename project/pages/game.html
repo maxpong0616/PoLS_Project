@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>快樂學五十音</title>
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="/css/exam.css" rel="stylesheet">
+  <link type="text/css" href="/css/game.css" rel="stylesheet">
+  <link type="text/css" href="/css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+</head>
+<body class="grey lighten-4 gojyu">
+
+  <!-- top nav -->
+  <nav class="z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="/">快樂學<span>五十音</span></a>
+      <span class="right grey-text text-darken-1">
+        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+      </span>
+    </div>
+  </nav>
+
+  <!-- side nav -->
+  <ul id="side-menu" class="sidenav side-menu">
+    <li><a class="subheader">快樂學五十音</a></li>
+    <li><a href="/" class="waves-effect">首頁</a></li>
+    <li><a href="/pages/table.html" class="waves-effect">五十音表</a></li>
+    <li><a href="/pages/handwrite.html" class="waves-effect">手寫練習</a></li>
+    <li><a href="/pages/test.html" class="waves-effect">測驗</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="/pages/contact.html" class="waves-effect">
+      <i class="material-icons">mail_outline</i>聯絡我們</a>
+    </li>
+  </ul>
+
+  <!-- content -->
+  <div class="container">
+    <div id="loader"></div>
+    <div id="game" class="justify-center flex-column hidden">
+      <div id="hud">
+          <div id="hud-item">
+            <p id="progressText" class="hud-prefix">
+              Question
+            </p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+          <div id="hud-item">
+            <p class="hud-prefix">
+              Score
+            </p>
+            <h1 class="hud-main-text" id="score">
+              0
+            </h1>
+          </div>
+      </div>  
+    
+      <h2 id="question"></h2>
+      <div class="choice-container">
+        <p class="choice-prefix">A</p>
+        <p class="choice-text" data-number="1"></p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">B</p>
+        <p class="choice-text" data-number="2"></p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">C</p>
+        <p class="choice-text" data-number="3"></p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">D</p>
+        <p class="choice-text" data-number="4"></p>
+      </div>
+    </div>
+  </div>
+  <script src="/js/ui.js"></script>
+  <script src="/js/game.js"></script>
+</body>
+</html>
