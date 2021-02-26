@@ -43,11 +43,11 @@
     <table class="gojyutable">
       <tbody>
         <tr>
-          <td><button class=jpword id=a>あ<br>a</button></td>
-          <td><span class=jpword>い</span><br>i</td>
-          <td><span class=jpword>う</span><br>u</td>
-          <td><span class=jpword>え</span><br>e</td>
-          <td><span class=jpword>お</span><br>o</td>
+          <td><button class=a onclick="play_audio()">あ<br>a</button></td>
+          <td><button class=i onclick="play_audio()">い<br>i</button></td>
+          <td><button class=u onclick="play_audio()">う<br>u</button></td>
+          <td><button class=e onclick="play_audio()">え<br>e</button></td>
+          <td><button class=o onclick="play_audio()">お<br>o</button></td>
         </tr>
         <tr>
           <td>か</td>
@@ -130,9 +130,12 @@
     </table>
   </div>
   
-  <audio id="Audio_a">
-    <source src="/gojyuon_mp3/a.mp3" type="audio/mpeg">
-  </audio>
+  <audio id="a" src="/gojyuon_mp3/a.mp3" type="audio/mpeg"></audio>
+  <audio id="i" src="/gojyuon_mp3/i.mp3" type="audio/mpeg"></audio>
+  <audio id="u" src="/gojyuon_mp3/u.mp3" type="audio/mpeg"></audio>
+  <audio id="e" src="/gojyuon_mp3/e.mp3" type="audio/mpeg"></audio>
+  <audio id="o" src="/gojyuon_mp3/o.mp3" type="audio/mpeg"></audio>
+
 
   <script src="/js/ui.js"></script>
   <script>document.getElementById("defaultOpen").click();</script>
