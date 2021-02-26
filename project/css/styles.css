@@ -99,11 +99,11 @@ nav .sidenav-trigger{
   height: 100%;
 }
 
-
-.jpword{
+tbody button{
   font-size: 30px;
   border: none;
   padding: 0px;
+  width: 100%;
 }
 
 /*paint pad*/
