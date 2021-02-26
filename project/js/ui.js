@@ -77,8 +77,6 @@ function pad(){
   }
 }
 /*-----------------------table audio-----------------------------*/
-var kana_a = document.getElementById("a");
-
-kana_a.addEventListener("click", function() {
-  document.getElementById("Audio_a").play();
-});
+function play_audio(){
+  document.getElementById(`${event.target.className}`).play();
+}
