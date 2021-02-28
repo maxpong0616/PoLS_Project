@@ -9,8 +9,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" href="/css/styles.css" rel="stylesheet">
   <script type="text/javascript" src="/js/materialize.min.js"></script>
+  <link href="/img/favicon.ico" rel="shortcut icon">
 </head>
-<body class="grey lighten-4 gojyu" onload="pad()">
+<body class="grey lighten-4 gojyu">
 
   <!-- top nav -->
   <nav class="z-depth-0">
@@ -37,13 +38,21 @@
 
   <!-- content -->
   <h3 class="sub-title">手寫練習</h2>
-    <div id="sketch">
-      <canvas id="paint"></canvas>
-    </div>
-    
-    
-    <div id="clear"> 
-      <button onclick="new pad().erase();">CLEAR</button>
+    <table class="gojyutable" id="handwriteTable">
+      <tbody>
+        <tr>
+          <td><button class=a onclick="openPad()">あ<br>a</button></td>
+          <td><button class=i onclick="openPad()">い<br>i</button></td>
+          <td><button class=u onclick="openPad()">う<br>u</button></td>
+          <td><button class=e onclick="openPad()">え<br>e</button></td>
+          <td><button class=o onclick="openPad()">お<br>o</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="containerD" class="containerD hidItem">
+      <canvas id="drawing-area" class="drawing-area" height="350" width="350"></canvas>
+      <button id="clear-button" class="clear-button" type="button">Clear</button>
+      <button id="closePad" onclick="closePad()">X</button>
     </div>
 
   <script src="/js/ui.js"></script>
