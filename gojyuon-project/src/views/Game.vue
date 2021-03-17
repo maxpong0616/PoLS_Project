@@ -61,6 +61,7 @@ export default {
           let score = 0;
           let questionCounter = 0;
           let availableQuesions = [];
+          let wrongnum = 0;
 
           let questions = [];
 
@@ -79,7 +80,7 @@ export default {
 
           //CONSTANTS
           const CORRECT_BONUS = 10;
-          const MAX_QUESTIONS = 3;
+          const MAX_QUESTIONS = 10;
 
           function startGame(){
               questionCounter = 0;
@@ -91,7 +92,7 @@ export default {
           };
 
           function getNewQuestion(){
-          if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+          if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS || wrongnum === 5) {
               localStorage.setItem("mostRecentScore", score);
               //go to the end page
               /* return window.location.assign("/pages/end.html"); */
@@ -100,7 +101,8 @@ export default {
           questionCounter++;
           progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
           //Update the progress bar
-          progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+          //progressBarFull.style.width = `${(1 - (questionCounter / MAX_QUESTIONS) + 0.2)* 100}%`; 五題所以先加1/5 讓他滿
+          progressBarFull.style.width = `${(1 - (wrongnum / 5))* 100}%`; 
 
           const questionIndex = Math.floor(Math.random() * availableQuesions.length);
           currentQuestion = availableQuesions[questionIndex];
@@ -129,6 +131,10 @@ export default {
               if (classToApply === "correct") {
                   incrementScore(CORRECT_BONUS);
               }
+              else{
+                wrongnum ++;
+                console.log(wrongnum);
+              }
 
               selectedChoice.parentElement.classList.add(classToApply);
 
@@ -140,25 +146,51 @@ export default {
           });
 
           function incrementScore(num){
-          score += num;
-          scoreText.innerText = score;
+            score += num;
+            scoreText.innerText = score;
           };
 
       },
       closeNav(){
         this.$emit('closeNav')
-      }
+      },
+      /* resetBG(){
+        console.log(document.body);
+        document.body.style.backgroundImage = 'url()';
+      },
+      setBG(){
+        document.body.style.backgroundImage = 'url(../../src/assets/cave.jpg)'
+        document.body.style.backgroundSize = 'cover'
+        document.body.style.backgroundRepeat = 'no-repeat'
+        document.body.style.backgroundPosition = 'center'
+        document.body.style.height = '313px'
+      } */
+
   },
   mounted(){
       this.closeNav();
       this.startexam();
+      //this.setBG();
   },
+  beforeUnmount(){
+    //this.resetBG();
+    this.closeNav();
+  }
 }
 </script>
 
 <style>
+/* body{
+  background-image: url(../../src/assets/cave.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 313px;
+}  */
+
 #question{
   font-size: 25px;
+  color:white;
 }
 
 .choice-container {
@@ -206,12 +238,17 @@ export default {
 .hud-prefix {
   text-align: center;
   font-size: 20px;
+  color:white;
 }
 
 .hud-main-text {
   text-align: center;
+  color:white;
 }
 
+#progressText{
+  color:white;
+}
 #progressBar {
   width: 200px;
   height: 40px;
@@ -221,8 +258,8 @@ export default {
 
 #progressBarFull {
   height: 34px;
-  background-color: #56a5eb;
-  width: 0%;
+  background-color: #dd3529;
+  width: 100%;
 }
 
 /* FORMS */

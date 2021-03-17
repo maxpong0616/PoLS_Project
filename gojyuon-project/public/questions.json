@@ -1,26 +1,82 @@
 [
   {
-    "question": "下列何者發音為ha?",
-    "choice1": "は",
-    "choice2": "ら",
+    "question": "下列何者發音為a?",
+    "choice1": "お",
+    "choice2": "こ",
     "choice3": "あ",
-    "choice4": "を",
-    "answer": 1
-  },
-  {
-    "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
-    "choice1": "<script href='xxx.js'>",
-    "choice2": "<script name='xxx.js'>",
-    "choice3": "<script src='xxx.js'>",
-    "choice4": "<script file='xxx.js'>",
+    "choice4": "え",
     "answer": 3
   },
   {
-    "question": " How do you write 'Hello World' in an alert box?",
-    "choice1": "msgBox('Hello World');",
-    "choice2": "alertBox('Hello World');",
-    "choice3": "msg('Hello World');",
-    "choice4": "alert('Hello World');",
+    "question": "下列何者發音為i?",
+    "choice1": "い",
+    "choice2": "く",
+    "choice3": "う",
+    "choice4": "お",
+    "answer": 1
+  },
+  {
+    "question": "下列何者發音為u?",
+    "choice1": "く",
+    "choice2": "あ",
+    "choice3": "け",
+    "choice4": "う",
     "answer": 4
+  },
+  {
+    "question": "下列何者發音為e?",
+    "choice1": "う",
+    "choice2": "か",
+    "choice3": "え",
+    "choice4": "け",
+    "answer": 3
+  },
+  {
+    "question": "下列何者發音為o?",
+    "choice1": "く",
+    "choice2": "お",
+    "choice3": "あ",
+    "choice4": "う",
+    "answer": 2
+  },
+  {
+    "question": "下列何者發音為ka?",
+    "choice1": "あ",
+    "choice2": "か",
+    "choice3": "こ",
+    "choice4": "う",
+    "answer": 2
+  },
+  {
+    "question": "下列何者發音為ki?",
+    "choice1": "き",
+    "choice2": "か",
+    "choice3": "あ",
+    "choice4": "け",
+    "answer": 1
+  },
+  {
+    "question": "下列何者發音為ku?",
+    "choice1": "け",
+    "choice2": "う",
+    "choice3": "お",
+    "choice4": "く",
+    "answer": 4
+  },
+  {
+    "question": "下列何者發音為ke?",
+    "choice1": "き",
+    "choice2": "い",
+    "choice3": "あ",
+    "choice4": "け",
+    "answer": 4
+  },
+  {
+    "question": "下列何者發音為ko?",
+    "choice1": "あ",
+    "choice2": "か",
+    "choice3": "こ",
+    "choice4": "う",
+    "answer": 3
   }
 ]

@@ -2,8 +2,6 @@
   <Topbanner/>
   <router-view 
     @closeNav="toggleNav" 
-    @openStage="stageUpdate"
-    v-bind:isHstg2="this.isHstg2"
   />
   <br><br><br><br><br>
   <Bottomnav v-if="navOn"/>
@@ -17,14 +15,7 @@ export default {
   data(){
     return{
       navOn: true,
-      isHstg2: false,
-      isHstg3: false,
-      isHstg4: false,
-      isHstg5: false,
-      isKstg2: false,
-      isKstg3: false,
-      isKstg4: false,
-      isKstg5: false
+      dataInititated: false,
     }
   },
   methods:{
@@ -34,6 +25,21 @@ export default {
     stageUpdate(stgnum){
       this['isHstg'+stgnum] = true
       console.log(stgnum)
+    },
+    setStage(){
+      if(localStorage.getItem('dataInititated') === null){
+        localStorage.setItem('isHstg2', 'off');
+        localStorage.setItem('isHstg3', 'off');
+        localStorage.setItem('isHstg4', 'off');
+        localStorage.setItem('isHstg5', 'off');
+        localStorage.setItem('isKstg2', 'off');
+        localStorage.setItem('isKstg3', 'off');
+        localStorage.setItem('isKstg4', 'off');
+        localStorage.setItem('isKstg5', 'off');
+        localStorage.setItem('dataInititated', 'true');
+        console.log(localStorage.getItem('dataInititated'))
+      }
+
     }
   },
   components:{
@@ -42,7 +48,10 @@ export default {
   },
   mounted () {
     M.AutoInit()
-  },  
+  },
+  created(){
+    this.setStage()
+  }
 }
 </script>
 <style>

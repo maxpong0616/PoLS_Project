@@ -229,7 +229,8 @@ export default {
         openKtable4: false,
         openKtable5: false,
         step : 1,
-        Hstg2: this.isHstg2,
+        /* Hstg2: this.isHstg2, */
+        Hstg2: false,
         Hstg3: false,
         Hstg4: false,
         Hstg5: false,
@@ -315,10 +316,20 @@ export default {
       play_audio(event){
         var audio = new Audio(require("../assets/gojyuon_mp3/"+event.target.className+".mp3"))
         audio.play()
+      },
+      checkStage(){
+        if(localStorage.getItem('isHstg2') === 'on'){this.Hstg2 = true;}
+        if(localStorage.getItem('isHstg3') === 'on'){this.Hstg3 = true;}
+        if(localStorage.getItem('isHstg4') === 'on'){this.Hstg4 = true;}
+        if(localStorage.getItem('isHstg5') === 'on'){this.Hstg5 = true;}
+        if(localStorage.getItem('isKstg2') === 'on'){this.Kstg2 = true;}
+        if(localStorage.getItem('isKstg3') === 'on'){this.Kstg3 = true;}
+        if(localStorage.getItem('isKstg4') === 'on'){this.Kstg4 = true;}
+        if(localStorage.getItem('isKstg5') === 'on'){this.Kstg5 = true;}
       }
     },
     mounted(){
-      console.log(this.Hstg2)
+      this.checkStage()
     }
 }
 </script>

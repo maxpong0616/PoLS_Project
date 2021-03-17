@@ -3,11 +3,11 @@
     <table class="gojyutable" id="handwriteTable" v-if="handwriteTable">
       <tbody>
         <tr>
-          <td><button class=a @click="openPad">あ<br>a</button></td>
-          <td><button class=i @click="openPad">い<br>i</button></td>
-          <td><button class=u @click="openPad">う<br>u</button></td>
-          <td><button class=e @click="openPad">え<br>e</button></td>
-          <td><button class=o @click="openPad">お<br>o</button></td>
+          <td><button class=a @click="openPad($event)">あ<br>a</button></td>
+          <td><button class=i @click="openPad($event)">い<br>i</button></td>
+          <td><button class=u @click="openPad($event)">う<br>u</button></td>
+          <td><button class=e @click="openPad($event)">え<br>e</button></td>
+          <td><button class=o @click="openPad($event)">お<br>o</button></td>
         </tr>
       </tbody>
     </table>
@@ -29,9 +29,19 @@ export default {
         }
     },
     methods:{
-        openPad(){
+        openPad(event){
+            var url = "./hw_kanas/"+event.target.className+".png"
+            console.log('url('+ url +')')
             this.handwriteTable = false
             this.padContainer = true
+            
+            setTimeout(function(){
+              const padBG = document.getElementById('drawing-area');
+              padBG.style.backgroundImage = 'url('+ url +')'
+              padBG.style.backgroundSize = 'cover'
+              padBG.style.backgroundRepeat = 'no-repeat'
+            }, 50); 
+            
         },
         closePad(){
             this.handwriteTable = true
@@ -59,7 +69,7 @@ export default {
 
 .drawing-area {
   box-shadow: 0 0 6px 0 #999;
-  background-image: url('https://i.imgur.com/PTM59o2.png');
+  background-image: none;
 }
 
 .clear-button {

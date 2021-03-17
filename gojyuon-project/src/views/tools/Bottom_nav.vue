@@ -64,16 +64,15 @@ export default {
   width:20%;
 }
 
-/* Change the color of links on hover */
+/* Change the color of links on hover and clicked*/
 .navbar a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Add a green background color to the active link */
-.navbar a.active {
-  background-color: #4CAF50;
-  color: white;
+.navbar .router-link-active{
+  background-color: #ddd;
+  color: black;
 }
 
 /* Hide the link that should open and close the navbar on small screens */

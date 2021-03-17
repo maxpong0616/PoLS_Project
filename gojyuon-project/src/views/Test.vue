@@ -6,15 +6,14 @@
       <router-link class="btn" to="/highscore">High Scores</router-link>
     </div>
   </div>
-  <button @click="openstage(2)">OPEN 2</button>
+  <button @click="openstage">OPEN 2</button>
 </template>
 
 <script>
 export default {
-  emits: ["openStage"],
   methods:{
-    openstage(stgnum){
-      this.$emit('openStage', stgnum);
+    openstage(){
+      localStorage.setItem('isHstg2', 'on');
     }
   },
 }

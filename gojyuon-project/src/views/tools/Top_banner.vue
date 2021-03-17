@@ -2,7 +2,7 @@
   
   <nav class="z-depth-0">
     <div class="nav-wrapper container">
-      <router-link to="/">快樂學<span>五十音</span></router-link>
+      <router-link to="/">五十音<span>大冒險</span></router-link>
     </div>
   </nav>
 </template>
