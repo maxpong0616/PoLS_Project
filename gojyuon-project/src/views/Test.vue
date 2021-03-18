@@ -1,4 +1,4 @@
-<template>
+<template>  
   <div class="containerT">
     <div id="home" class="flex-center flex-column">
       <h1>測驗</h1>
@@ -14,7 +14,7 @@ export default {
   methods:{
     openstage(){
       localStorage.setItem('isHstg2', 'on');
-    }
+    },
   },
 }
 </script>

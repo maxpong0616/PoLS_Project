@@ -1,0 +1,82 @@
+[
+  {
+    "question": "下列何者發音為sa?",
+    "choice1": "と",
+    "choice2": "つ",
+    "choice3": "そ",
+    "choice4": "さ",
+    "answer": 4
+  },
+  {
+    "question": "下列何者發音為shi?",
+    "choice1": "す",
+    "choice2": "た",
+    "choice3": "て",
+    "choice4": "し",
+    "answer": 4
+  },
+  {
+    "question": "下列何者發音為su?",
+    "choice1": "さ",
+    "choice2": "す",
+    "choice3": "つ",
+    "choice4": "そ",
+    "answer": 2
+  },
+  {
+    "question": "下列何者發音為se?",
+    "choice1": "せ",
+    "choice2": "て",
+    "choice3": "し",
+    "choice4": "と",
+    "answer": 1
+  },
+  {
+    "question": "下列何者發音為so?",
+    "choice1": "ち",
+    "choice2": "そ",
+    "choice3": "し",
+    "choice4": "て",
+    "answer": 2
+  },
+  {
+    "question": "下列何者發音為ta?",
+    "choice1": "て",
+    "choice2": "ち",
+    "choice3": "た",
+    "choice4": "せ",
+    "answer": 3
+  },
+  {
+    "question": "下列何者發音為chi?",
+    "choice1": "さ",
+    "choice2": "し",
+    "choice3": "す",
+    "choice4": "ち",
+    "answer": 4
+  },
+  {
+    "question": "下列何者發音為tsu?",
+    "choice1": "せ",
+    "choice2": "し",
+    "choice3": "つ",
+    "choice4": "て",
+    "answer": 3
+  },
+  {
+    "question": "下列何者發音為te?",
+    "choice1": "て",
+    "choice2": "そ",
+    "choice3": "た",
+    "choice4": "つ",
+    "answer": 1
+  },
+  {
+    "question": "下列何者發音為to?",
+    "choice1": "と",
+    "choice2": "し",
+    "choice3": "つ",
+    "choice4": "そ",
+    "answer": 1
+  }
+]

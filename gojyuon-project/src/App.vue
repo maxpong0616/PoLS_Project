@@ -22,10 +22,6 @@ export default {
     toggleNav(){
       this.navOn = !this.navOn
     },
-    stageUpdate(stgnum){
-      this['isHstg'+stgnum] = true
-      console.log(stgnum)
-    },
     setStage(){
       if(localStorage.getItem('dataInititated') === null){
         localStorage.setItem('isHstg2', 'off');

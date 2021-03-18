@@ -12,7 +12,7 @@
     <i class="material-icons icons">create</i><br>
     手寫
   </router-link>
-  <router-link to="/test">
+  <router-link to="/stage">
     <i class="material-icons icons">hiking</i><br>
     測驗
   </router-link>

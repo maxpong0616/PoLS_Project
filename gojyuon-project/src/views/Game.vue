@@ -65,13 +65,14 @@ export default {
 
           let questions = [];
 
-          fetch('questions.json')
+          /* fetch('questions/H1.json') */
+          fetch(checkStage())
               .then((res) => {
                   return res.json();
               })
               .then((loadedQuestions) => {
                   questions = loadedQuestions;
-
+                  console.log()
                   startGame();
               })
               .catch((err) => {
@@ -149,6 +150,43 @@ export default {
             score += num;
             scoreText.innerText = score;
           };
+
+          function checkStage(){
+            var stage = localStorage.getItem('nextStage');
+            if(stage === 'H1'){
+              return 'questions/H1.json'
+            }
+            else if(stage === 'H2'){
+              return 'questions/H2.json'
+            }
+            else if(stage === 'H3'){
+              return 'questions/H3.json'
+            }
+            else if(stage === 'H4'){
+              return 'questions/H4.json'
+            }
+            else if(stage === 'H5'){
+              return 'questions/H5.json'
+            }
+            else if(stage === 'H5'){
+              return 'questions/H5.json'
+            }
+            else if(stage === 'K1'){
+              return 'questions/K1.json'
+            }
+            else if(stage === 'K2'){
+              return 'questions/K2.json'
+            }
+            else if(stage === 'K3'){
+              return 'questions/K3.json'
+            }
+            else if(stage === 'K4'){
+              return 'questions/K4.json'
+            }
+            else if(stage === 'K5'){
+              return 'questions/K5.json'
+            }
+          }
 
       },
       closeNav(){

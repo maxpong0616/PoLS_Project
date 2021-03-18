@@ -1,12 +1,12 @@
 <template>
   <div class="container grey-text">
-    <h5 class="center">Contact Us</h5>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, porro voluptatum illum veniam eaque sunt sit labore provident eligendi! Voluptate amet suscipit inventore unde maxime atque impedit officia nobis laboriosam!</p>
+    <h5 class="center">聯絡我們</h5>
+    <p>算了吧 別連絡了</p>
     <div class="divider"></div>
-    <h6>Find us at:</h6>
+    <h6>聯絡資訊</h6>
     <ul>
-      <li>123 Spicy Noodle Road</li>
-      <li>Manchester, UK</li>
+      <li>email: 40700108e@ntnu.edu.tw</li>
+      <li>學習科學學士學位學程 陳威守</li>
     </ul>
   </div>
 </template>

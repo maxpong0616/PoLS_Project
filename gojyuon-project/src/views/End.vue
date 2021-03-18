@@ -20,7 +20,7 @@
             Save
           </button>
         </form>
-        <router-link class="btn" to="/test">Play Again</router-link>
+        <router-link class="btn" to="/stage">Play Again</router-link>
         <router-link class="btn" to="/">Go Home</router-link>
       </div>
   </div>

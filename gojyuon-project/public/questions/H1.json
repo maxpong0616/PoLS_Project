@@ -1,0 +1,82 @@
+[
+  {
+    "question": "下列何者發音為a?",
+    "choice1": "お",
+    "choice2": "こ",
+    "choice3": "あ",
+    "choice4": "え",
+    "answer": 3
+  },
+  {
+    "question": "下列何者發音為i?",
+    "choice1": "い",
+    "choice2": "く",
+    "choice3": "う",
+    "choice4": "お",
+    "answer": 1
+  },
+  {
+    "question": "下列何者發音為u?",
+    "choice1": "く",
+    "choice2": "あ",
+    "choice3": "け",
+    "choice4": "う",
+    "answer": 4
+  },
+  {
+    "question": "下列何者發音為e?",
+    "choice1": "う",
+    "choice2": "か",
+    "choice3": "え",
+    "choice4": "け",
+    "answer": 3
+  },
+  {
+    "question": "下列何者發音為o?",
+    "choice1": "く",
+    "choice2": "お",
+    "choice3": "あ",
+    "choice4": "う",
+    "answer": 2
+  },
+  {
+    "question": "下列何者發音為ka?",
+    "choice1": "あ",
+    "choice2": "か",
+    "choice3": "こ",
+    "choice4": "う",
+    "answer": 2
+  },
+  {
+    "question": "下列何者發音為ki?",
+    "choice1": "き",
+    "choice2": "か",
+    "choice3": "あ",
+    "choice4": "け",
+    "answer": 1
+  },
+  {
+    "question": "下列何者發音為ku?",
+    "choice1": "け",
+    "choice2": "う",
+    "choice3": "お",
+    "choice4": "く",
+    "answer": 4
+  },
+  {
+    "question": "下列何者發音為ke?",
+    "choice1": "き",
+    "choice2": "い",
+    "choice3": "あ",
+    "choice4": "け",
+    "answer": 4
+  },
+  {
+    "question": "下列何者發音為ko?",
+    "choice1": "あ",
+    "choice2": "か",
+    "choice3": "こ",
+    "choice4": "う",
+    "answer": 3
+  }
+]
